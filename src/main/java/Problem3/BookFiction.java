@@ -17,6 +17,10 @@ public class BookFiction extends Book {
         this.genres = anotherBook.genres;
     }
 
+    public void setTitle(String title){
+        this.title = title;
+    }
+
     @Override
     public int getLateFeeInDollar() {
         return lateFeePerDayInDollar;
