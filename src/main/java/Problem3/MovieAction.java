@@ -12,6 +12,10 @@ public class MovieAction extends Movie {
         super(anotherMovie);
     }
 
+    public void setTitle(String title){
+        this.title = title;
+    }
+
     @Override
     public int getLateFeeInDollar() {
         return lateFeePerDayInDollar;

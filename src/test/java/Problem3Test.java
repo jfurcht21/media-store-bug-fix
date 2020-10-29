@@ -11,9 +11,9 @@ public class Problem3Test {
         Book br = new BookRomance("t1", "a1");
         //assertFalse(f.equals(br));
         // New Test
-        BookFiction f1 = new BookFiction("t1", "au1", "g1");
         BookFiction f2 = new BookFiction("t1","au1","g1");
         BookFiction f3 = new BookFiction(f2);
+        assertTrue(f2.equals(f3));
         f2.setTitle("t2");
         assertTrue(f3.equals(f2));
 
@@ -27,6 +27,11 @@ public class Problem3Test {
         Movie mc = new MovieComedy("r1", "t1");
         assertFalse(m.equals(mc));
         //New Test
+        MovieAction m1 = new MovieAction("R","movie1");
+        MovieAction m2 = new MovieAction(m1);
+        assertTrue(m1.equals(m2));
+        m2.setTitle("movie2");
+        assertTrue(m1.equals(m2));
     }
 
     // DO NOT REMOVE OR CHANGE ANYTHING BELOW THIS!
